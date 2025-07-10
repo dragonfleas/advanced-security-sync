@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/api/*": ["src/api/*"],
+      "@/core/*": ["src/core/*"],
+      "@/domain/*": ["src/core/domain/*"],
+      "@/usecases/*": ["src/core/usecases/*"],
+      "@/infra/*": ["src/infra/*"],
+      "@/utils/*": ["src/utils/*"]
+    },
+    "types": ["node", "jest"]
+  },
+  "include": [
+    "tests/**/*",
+    "src/**/*"
+  ]
+}
